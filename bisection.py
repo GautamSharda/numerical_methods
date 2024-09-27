@@ -11,6 +11,7 @@ def max_root_bisection(f, a, b, e):
         return None
 
     iteration = 0
+    # The following condition is not quite right -- min  =/= sufficient
     while iteration <= min_iters_to_beat_error_bound(a, b, e):
         midpoint = (a + b) / 2
         if f(midpoint)*f(b) < 0:
