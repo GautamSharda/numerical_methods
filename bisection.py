@@ -22,7 +22,7 @@ def max_root_bisection(f, a, b, e):
     return midpoint, iteration
 
 def abs_error(true_root, estimate):
-    return (estimate - true_root) / true_root
+    return (estimate - true_root)
 
 if __name__ == "__main__":
     error_bound = 0.001
